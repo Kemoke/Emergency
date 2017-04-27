@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/stay_alert"
+        android:textColor="@color/textRed"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/second_sub"
+        android:textAlignment="center"
+        android:textColor="@color/textRed"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+
+    <ImageView
+        android:id="@+id/main_btn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:padding="50dp"
+        android:src="@drawable/ic_local_shipping_black_24dp"
+        android:tint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:tint="@color/textRed"
+        app:layout_constraintBottom_toBottomOf="@+id/main_btn"
+        app:layout_constraintLeft_toLeftOf="@+id/main_btn"
+        app:layout_constraintRight_toRightOf="@+id/main_btn"
+        app:layout_constraintTop_toTopOf="@+id/main_btn" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@color/textRed"
+        android:drawableLeft="@drawable/ic_warning_white_24dp"
+        android:drawableRight="@drawable/ic_warning_white_24dp"
+        android:padding="5dp"
+        android:text="@string/cancel"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_btn" />
+</android.support.constraint.ConstraintLayout>

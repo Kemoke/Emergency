@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Emergency</string>
+    <string name="home_sub">By pressing this button you call an Ambulance to your location</string>
+    <string name="cancel">CANCEL</string>
+    <string name="stay_alert">STAY ALERT!</string>
+    <string name="second_sub">Ambulance has been dispatched to your location</string>
+    <string name="ambulance_is_on_it_s_way">Ambulance is on it\'s way!</string>
+    <string name="third_sub1">If you are able answer the following questions</string>
+    <string name="who_needs_help">Who needs help?</string>
+    <string name="yourself">Yourself</string>
+    <string name="another_person">Another person</string>
+    <string name="multiple">Multiple</string>
+    <string name="type_of_injury">Type of injury?</string>
+    <string name="fracture">Fracture</string>
+    <string name="multiple_injuries">Multiple injuries</string>
+    <string name="burns">Burns</string>
+    <string name="concussion">Concussion</string>
+    <string name="other">Other</string>
+</resources>

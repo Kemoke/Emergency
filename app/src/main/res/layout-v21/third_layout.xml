@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/ambulance_is_on_it_s_way"
+        android:textAlignment="center"
+        android:textColor="@color/textRed"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/third_sub1"
+        android:textAlignment="center"
+        android:textColor="@color/textRed"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_sub2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+
+    <TextView
+        android:id="@+id/main_sub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/who_needs_help"
+        android:textAlignment="center"
+        android:textColor="@color/textRed"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/self_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_sub" />
+
+    <Button
+        android:id="@+id/self_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/textRed"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/yourself"
+        android:textAlignment="textEnd"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_sub2" />
+
+    <Button
+        android:id="@+id/other_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/textRed"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/yourself"
+        android:textAlignment="textEnd"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/many_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/self_btn" />
+
+    <Button
+        android:id="@+id/many_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/textRed"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/yourself"
+        android:textAlignment="textEnd"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_btn" />
+</android.support.constraint.ConstraintLayout>
